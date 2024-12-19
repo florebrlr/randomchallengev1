@@ -1,0 +1,166 @@
+@import url("https://fonts.cdnfonts.com/css/the-sims-sans");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* déclaration de mes couleurs en variables */
+	--vert: rgb(15, 204, 15);
+	--bleufoncé: #1b0e98;
+	--bleumid: #1927c3;
+	--bleuclair: #4fcff0;
+	--fondtransparent: rgba(255, 255, 255, 0.371);
+
+	background-image: linear-gradient(to top, var(--bleuclair) 0%, var(--bleumid) 51%, var(--bleufoncé) 100%);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center bottom;
+	color: white;
+	font-family: "Raleway", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper h1 {
+	font-family: "The Sims Sans", sans-serif;
+	font-size: xx-large;
+    justify-self: center;
+    margin-bottom: 0.5em;
+}
+/* div du formulaire */
+.wrapper {
+    width: 420px;
+    background-color: var(--fondtransparent);
+    border: rgba(255, 255, 255, 0.438);
+	border-radius: 20px;
+	border-width: 5px;
+	border-style: solid;
+    padding: 2em;
+
+}
+
+.wrapper .input-box {
+    padding: 0.3em;
+    height: 100%;
+    margin: 0.5em;
+}
+
+.input-box {
+    padding: 1em;
+}
+.input-box label {
+    display: inline-flex;
+    padding: 0.2em 0;
+}
+.input-box i {
+    display: inline-flex;
+}
+
+.input-box input {
+    width: 90%;
+    height: 100%;
+    border: rgba(255, 255, 255, 0.438);
+	border-radius: 20px;
+	border-width: 5px;
+	border-style: solid;
+    padding-left: 0.3em;
+    outline: none;
+}
+
+.remember-forgot label input, .show-pswd label input {
+    margin-right: 3px;
+}
+
+/* btn login de la page login */
+#login-btn-login, #register-btn-register {
+    width: 100%;
+    background-color: var(--fondtransparent);
+	color: white;
+	font-family: "The Sims Sans", sans-serif;
+	font-size: 18px;
+	padding: 0.5em 1em;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+    margin: 1em 0px;
+}
+
+#login-btn-login:hover, #register-btn-register:hover {
+	background-color: var(--vert);
+	cursor: pointer;
+
+}
+
+.remember-forgot, .show-pswd {
+    font-size: 14px;
+}
+.register-link {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+a {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#required {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--bleumid);
+}
+
+.checkpwd {
+    padding: 0.5em;
+}
+/* password et confirmation */
+.infos {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    /* background-color: purple; */
+}
+.info-icon {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: left;
+}
+.info-icon i {
+    margin-right: 0.3em;
+}
+
+.infos li {
+    /* color: red; */
+    font-size: 0.9em;
+}
+
+#btn-visibilite-password:hover {
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+}
+/* 
+.show-pswd {
+    background-color: purple;
+    display: inline-block;
+    flex-direction: row;
+} */

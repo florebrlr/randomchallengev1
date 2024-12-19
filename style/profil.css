@@ -1,0 +1,126 @@
+@import url("https://fonts.cdnfonts.com/css/the-sims-sans");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* déclaration de mes couleurs en variables */
+	--vert: rgb(15, 204, 15);
+	--bleufoncé: #1b0e98;
+	--bleumid: #1927c3;
+	--bleuclair: #4fcff0;
+	--fondtransparent: rgba(255, 255, 255, 0.371);
+
+	background-image: linear-gradient(to top, var(--bleuclair) 0%, var(--bleumid) 51%, var(--bleufoncé) 100%);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center bottom;
+	color: white;
+	font-family: "Raleway", sans-serif;
+	min-width: 60vw;
+	max-width: 75vw;
+
+}
+/* MAIN */
+.container {
+	margin: 3em 5em;
+	padding: 1em 2em 2em 2em;
+	border: rgba(255, 255, 255, 0.438);
+	border-radius: 20px;
+	border-width: 5px;
+	border-style: solid;
+    width: 100%;
+    height:86vh;
+}
+.welcome-div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    font-family: "The Sims Sans", sans-serif;
+    font-size: 1.5em;
+	
+}
+#trad-simlish {
+    font-size: 0.8em;
+
+}
+
+#json-name {
+    font-family: "The Sims Sans", sans-serif;
+	color: var(--vert);
+}
+.showChallenge-div{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.showChallenge-div select {
+    width: 90%;
+    height: 100%;
+    border: rgba(255, 255, 255, 0.438);
+	border-radius: 20px;
+	border-width: 5px;
+	border-style: solid;
+    padding-left: 0.3em;
+    outline: none;
+}
+
+.btns-profil {
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    width: 100%;
+}
+#show-Challenge-btn-profil, #return-btn-profil {
+    width: 35%;
+	background-color: var(--fondtransparent);
+	color: white;
+	font-family: "The Sims Sans", sans-serif;
+	font-size: 18px;
+	padding: 0.4rem 1rem;
+	border-radius: 10px;
+	margin-bottom: 1em;
+	border: none;
+	cursor: pointer;
+}
+#show-Challenge-btn-profil:hover, #return-btn-profil:hover {
+background-color: var(--vert);
+cursor: pointer;
+}
+/* FOOTER */
+footer{
+    padding-left: 1rem;
+}
+footer span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-family: 'The Sims Sans SC', sans-serif;
+}
+
+footer div{
+    display: flex;
+    padding-left: 8px;
+}
+
+#logo-sims-galerie{
+    display: flex;
+    align-items: center;
+    
+}
+
+#logo-sims-galerie img{
+    height:30px;
+}
+
+#id-sims-galerie{
+    display: inline-block;
+}

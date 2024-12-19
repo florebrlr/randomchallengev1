@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="infos" content="s'identifier">
+    <link rel="stylesheet" href="./style/login-register-style.css">
+    <link rel="shortcut icon" href="./img/plumbob-green.png" type="image/x-icon">
+    <title>Random Challenge - identification</title>
+    <script src="https://kit.fontawesome.com/f08d8d0119.js" crossorigin="anonymous"></script>
+    <script src="./script/script_login.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <form id="login-form">
+                <!-- login -->
+                <h1>S'identifier</h1>
+                <!-- mail -->
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <label for="name">Adresse mail :&nbsp;<span id="required">*</span></label>
+                    <input type="email" placeholder="exemple@mail.com" id="mail-login" required>
+                </div>
+                <!-- Password -->
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <label for="name">Mot de passe:&nbsp;<span id="required">*</span></label>
+                    <input type="password" placeholder="Mot de passe" id="passeword-login"
+                        pattern="^^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" minlength="8" required>
+                </div>
+                <div class="show-pswd">
+                    <label><input type="checkbox" name="visibility-pswd" id="visibility-pswd">Voir mon mot de passe</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Se rappeler de moi</label>
+                    <!-- <a href="#">Mot de passe oublié ?</a> -->
+                </div>
+
+                <button id="login-btn-login" type="submit">Se connecter</button>
+
+                <div class="register-link">
+                    <p>Pas encore de compte ? <a href="./register.html">Créer un compte</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

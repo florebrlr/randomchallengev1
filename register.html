@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="infos" content="s'identifier">
+    <link rel="stylesheet" href="./style/login-register-style.css">
+    <link rel="shortcut icon" href="./img/plumbob-green.png" type="image/x-icon">
+    <!-- import icons du site fontawesome -->
+    <script src="https://kit.fontawesome.com/f08d8d0119.js" crossorigin="anonymous"></script>
+    <title>Random Challenge - S'enregistrer</title>
+    <script src="./script/script_register.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <form  id="register-form">
+                <!-- L'attribut action définit l'emplacement (une URL) où doivent être envoyées les données collectées par le formulaire. -->
+                <!-- login -->
+                <h1>Créer un compte</h1>
+                <!-- Username -->
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <label for="name">Nom d'utilisateur:&nbsp;<span id="required">*</span></label>
+                    <input type="text" placeholder="Nom d'utilisateur" id="username" minlength="3" required>
+                </div>
+                <!-- mail -->
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <label for="name">Adresse mail :&nbsp;<span id="required">*</span></label>
+                    <input type="email" placeholder="exemple@mail.com" id="mail" required>
+                </div>
+                <!-- Password -->
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <label for="pswd">Créer mon mot de passe :&nbsp;<span id="required">*</span></label>
+                    <input type="password" placeholder="Mot de passe" id="pswd"
+                        pattern="^^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" minlength="8" required>
+
+                    <!-- icon oeil ouvert -->
+                    <!-- <i class="fa-solid fa-eye" id="open-eye"></i> -->
+                    <!-- icon oeil fermé -->
+                    <!-- <i class="fa-solid fa-eye-slash" id="hidden-eye"></i> -->
+
+                    <div class="show-pswd">
+                        <label><input type="checkbox" name="visibility-pswd" id="visibility-pswd">Voir mon mot de passe</label>
+                    </div>
+
+                    <section class="infos">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>Le mot de passe doit :</span>
+                        </div>
+                        <ul>
+                            <li id="minuscule">comporter <span class="bold">1 minuscule</span></li>
+                            <li id="majuscule">comporter <span class="bold">1 majuscule</span></li>
+                            <li id="chiffre">comporter <span class="bold">1 chiffre</span></li>
+                            <li id="nbCaract">faire au minimum <span class="bold">8 caractères</span></li>
+                        </ul>
+                    </section>
+                    <!-- ConfirmedPassword -->
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <label for="confirmed-pswd">Mot de passe :&nbsp;<span id="required">*</span></label>
+                    <input type="password" placeholder="Confirmez votre mot de passe" id="confirmed-pswd"
+                        pattern="^^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" minlength="8" required>
+                    <div class="confirmedpwd"></div>
+                </div>
+                <!-- BTN S'enregistrer -->
+                <button id="register-btn-register" value="register" type="submit">S'inscrire</button>
+                <div class="register-link">
+                    <!-- S'identifier -->
+                    <p>J'ai déjà un compte ! <a href="./login.html">S'identifier</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

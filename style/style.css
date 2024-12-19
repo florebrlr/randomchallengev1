@@ -1,0 +1,212 @@
+@import url("https://fonts.cdnfonts.com/css/the-sims-sans");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* déclaration de mes couleurs en variables */
+	--vert: rgb(15, 204, 15);
+	--bleufoncé: #1b0e98;
+	--bleumid: #1927c3;
+	--bleuclair: #4fcff0;
+	--fondtransparent: rgba(255, 255, 255, 0.371);
+
+	background-image: linear-gradient(to top, var(--bleuclair) 0%, var(--bleumid) 51%, var(--bleufoncé) 100%);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center bottom;
+	color: white;
+	font-family: "Raleway", sans-serif;
+	min-width: 60vw;
+	max-width: 75vw;
+
+}
+/**********************************************************************************************************************************************/
+/* PAGE INDEX */
+/**********************************************************************************************************************************************/
+.mon-gros-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 3em 5em;
+	padding: 1em 2em 2em 2em;
+	border: rgba(255, 255, 255, 0.438);
+	border-radius: 20px;
+	border-width: 5px;
+	border-style: solid;
+
+
+}
+
+#sims4logo img {
+	width: 10vw;
+}
+/* fonts spécifiques */
+h1 {
+	font-family: "The Sims Sans", sans-serif;
+	color: var(--vert);
+	font-size: xx-large;
+}
+
+.simsfont {
+	font-family: "The Sims Sans", sans-serif;
+	color: var(--vert);
+}
+
+.simsfont-white {
+	font-family: "The Sims Sans", sans-serif;
+}
+
+#sulsul {
+	font-family: "The Sims Sans", sans-serif;
+}
+
+/* SECTION choix nb pack */
+p {
+	padding: 0.75em;
+}
+
+.packcheck {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 12px;
+	margin-bottom: 1em;
+}
+
+fieldset {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgba(245, 245, 245, 0.218);
+}
+
+legend {
+	font-family: "The Sims Sans", sans-serif;
+}
+
+fieldset div{
+	text-align: left;
+}
+/* mettre du padding entre checkbox et nom du pack */
+input {
+	margin-right: 0.5em;
+}
+#nb-pack {
+	background-color: var(--fondtransparent);
+	color: white;
+	font-family: 'The Sims Sans SC', sans-serif;
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 2em;
+	border: none;
+	cursor: pointer;
+}
+/* changer la couleur des options*/
+select option{
+	color: var(--bleufoncé);
+	font-family: 'The Sims Sans SC', sans-serif;
+}
+
+/* SECTION affichage du challenge */
+
+#btn-generer, button, #btn-generer-index{
+	width: 40%;
+	background-color: var(--fondtransparent);
+	color: white;
+	font-family: "The Sims Sans", sans-serif;
+	font-size: 18px;
+	padding: 0.4rem 1rem;
+	border-radius: 10px;
+	margin-bottom: 1em;
+	border: none;
+	cursor: pointer;
+}
+
+button a, #btn-generer-index {
+	text-decoration: none;
+	color: white;
+}
+
+#btn-generer:hover, #btn-return:hover, #btn-generer-index:hover, #register-btn:hover, #login-btn:hover, #save-challenge-btn:hover {
+	background-color: var(--vert);
+	cursor: pointer;
+}
+
+#generer-section {
+	text-align: left;
+	margin-top: 1em;
+	display:none;
+}
+
+#btn-return {
+	display: none;
+}
+.btns {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 0.8em;
+}
+/* btn pour sauvegarder le challenge*/
+#save-challenge-btn {
+	display: flex;
+	justify-self: center;
+	margin-top: 1em;
+}
+
+/* FOOTER */
+footer{
+    padding-left: 1rem;
+}
+footer span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-family: 'The Sims Sans SC', sans-serif;
+}
+
+footer div{
+    display: flex;
+    padding-left: 8px;
+}
+
+#logo-sims-galerie{
+    display: flex;
+    align-items: center;
+    
+}
+
+#logo-sims-galerie img{
+    height:30px;
+}
+
+#id-sims-galerie{
+    display: inline-block;
+}
+
+
+/**********************************************************************************************************************************************/
+/* SECTION CONNEXION */
+/**********************************************************************************************************************************************/
+.connexion {
+	/* background-color: purple; */
+	display: flex;
+	justify-content: right;
+	gap: 1em;
+	position: fixed;
+	margin-left: 30%;
+}
+
+#register-btn, #login-btn {
+	padding: 0.2em 0.5em;
+	backdrop-filter:blur(1.5rem) ;
+	width: 100%;
+	
+}
+
